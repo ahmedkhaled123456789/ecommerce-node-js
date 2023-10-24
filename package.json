@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
+  "engines": {
+    "node": "16.14.0"
+  },
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

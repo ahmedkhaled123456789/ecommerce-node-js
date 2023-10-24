@@ -23,7 +23,7 @@ const router = express.Router();
 router.use("/:categoryId/subcategory", subcategoryroutr);
 router.route("/").get(getCaterories).post(
   authServices.protect,
-  authServices.allowedTo("admin", "manager"),
+  authServices.allowedTo("admin", "manager"), 
 
   uploadCategoryImage,
   resizeImage,
