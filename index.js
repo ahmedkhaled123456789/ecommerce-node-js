@@ -28,8 +28,10 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // mount routes
-
-couponRoutes(app);
+app.get('/test', (req,res) =>{
+  res.send('Hello World!');
+})
+// couponRoutes(app); 
 // create error and send it to handling error
 app.all("*", (req, res, next) => {
   // const err = new Error(`can't find this route ${req.originalUrl}`);
